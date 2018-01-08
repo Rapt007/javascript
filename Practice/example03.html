@@ -1,0 +1,25 @@
+<!-- example for adding element to an array and showing how to use forEach in javascript-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tutorial</title>
+
+</head>
+<body>
+	<p>This is for each </p>
+<script>
+	// creating an array
+	var a=[1,2,3,4,5];
+	// initializing an empty array
+	var b=[];
+	// using forEach to iterate over every element in an array a.
+	a.forEach(function(number){
+		// incrementing the number which is taken from an array.
+		number++
+		// adding it to the array b
+		b.push(number);
+	});
+	console.log(b);
+</script>
+</body>
+</html>

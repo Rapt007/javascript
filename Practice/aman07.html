@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this is using and creating object another way</title>
+</head>
+<body>
+<div class="container" style="background-color: black">
+<h1 style="color: yellow">About me</h1>
+<p style="color: yellow" id="1"> I am a kind of an individual who loves to talk to others and like to know more about others</p>
+<button style="background-color: red" onclick="person.describe()">Info</button>
+</div>
+<script>
+	var person= new Object();
+	person.name="aman";
+	person.height=7;
+	person.age=23;
+	person.address = {
+		state: "texas",
+		city: "Arlington"
+	};
+	person.describe = function() {
+		var get_data=document.getElementById("1");
+		get_data.innerHTML ="hello! my name is"+ " " + this.name +" my height is" + " " + this.height+" my age is" + " "+ this.age + " I live in " + this.address.city + ",(" + this.address.state +")." ;
+	}
+
+</script>
+</body>
+</html>

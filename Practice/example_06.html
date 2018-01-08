@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>object tutorial</title>
+</head>
+<body>
+	<div class="container" style="background-color: black">
+		<h1 style="color: yellow"> This is the object example where I am getting full name</h1>
+	</div>
+<script>
+	var person={
+		firstname:"aman", 
+		lastname:"bassi",
+		fullname:function() {
+			return  this.firstname + " " + this.lastname;
+		},
+		address:{
+			street:"akasj",
+			city:"saharna"
+		}
+	};
+	console.log(person.fullname());
+</script>
+</body>
+</html>

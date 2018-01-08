@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating objects</title>
+</head>
+<body>
+	<div class="container" style="background-color: black">
+	<h1 style="color: yellow">This is object tutorial</h1>
+	</div>
+	
+	<div class="container" style="background-color: black" id="aman">
+		<button onclick="click_action()" style="color:yellow"> click me</button>
+	</div>
+	<script>
+		function click_action(){
+			var div_color= document.getElementById("aman");
+			console.log(div_color.style.value);
+			div_color.style["background-color"]= "green";
+		}
+	</script>
+</body>
+</html>
